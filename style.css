@@ -1,0 +1,373 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	font-size: 16px;
+	font-family: "Helvetica Neue", sans-serif;
+}
+
+h2:hover, h3:hover, .motto:hover {
+	color: #ffa64d;
+}
+
+#particles-js {
+	height: 100%;
+	z-index: 3;
+}
+
+.container {
+	margin: 0;
+	width: 100%;
+	height: 48em;
+	background-image: url('hospital.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-top: -1.4em;
+	position: fixed;
+	z-index: 99;
+}
+
+#logo {
+	width: 20%;
+	height: auto;
+	min-width: 200px;
+	padding: 0.75%;
+	padding-left: 2%;
+	float: left;
+}
+
+.nav-anchor {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.nav-anchor:hover {
+	color: #ffa64d;
+}
+
+.cf {
+	z-index: 10;
+}
+
+.index-collection-folder {
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	list-style-type: none;
+	font-weight: 600;
+	font-size: 1em;
+	display: inline-block;
+	float: right;
+	padding-right: 4%;
+	padding-top: 3%;
+	z-index: 11;
+}
+
+.motto {
+	font-size: 5em;
+	color: #000000;
+	font-family: "Playfair Display", serif;
+	letter-spacing: 0.1em;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 20%;
+	z-index: 1000;
+	color: #ffa64d;
+}
+
+#section1 {
+	background-color: #cccccc;
+	margin-top: -3em;
+	width: 100%;
+}
+
+#section1 h2 {
+	font-weight: 600;
+	font-size: 3em;
+	font-family: "Playfair Display", serif;
+	letter-spacing: 0.2em;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+
+#section1 p {
+	text-align: center;
+	font-family: "Playfair Display", serif;
+	font-size: 1em;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 5%;
+}
+
+#section2 {
+	background-color: #efefef;
+	margin-top: -2em;
+	font-family: "Playfair Display", serif;
+	font-size: 1em;
+	padding-left: 5%;
+	padding-right: 2%;
+	padding-bottom: 5%;
+}
+
+#section2 h3 {
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 2%;
+}
+
+#section2 ol {
+	padding-bottom: 2%;
+}
+
+.gallery {
+	background-color: #999999;
+	margin: 0;
+	width: 100%;
+}
+
+.gallery h2 {
+	letter-spacing: 0.2em;
+	font-weight: 500;
+	font-size: 3em;
+	font-family: "Playfair Display", serif;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	margin-top: -1em;
+}
+
+.gallery h3 {
+	text-align: center;
+	font-size: 1.5em;
+	font-family: "Playfair Display", serif;
+	margin-top: -2%;
+	margin-bottom: -2%;
+} 
+
+video {
+	margin-left: 28%;
+	margin-bottom: 5%;
+}
+
+.team {
+	height: 42em;
+}
+
+.team h2 {
+	float: right;
+	letter-spacing: 0.2em;
+	font-weight: 600;
+	font-family: "Playfair Display", serif;
+	font-size: 3em;
+	padding-right: 10%;
+	padding-top: 15%;
+}
+
+.team-comp {
+	float: left;
+	font-weight: 600;
+	font-family: "Playfair Display", serif;
+	padding-left: 13%;
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
+
+.team-comp ul {
+	list-style-type: none;
+}
+
+.supporting {
+	margin: 0;
+	width: 100%;
+	height: 16em;
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.supporting h2 {
+	letter-spacing: 0.2em;
+	font-family: "Playfair Display", serif;
+	font-size: 3em;
+	font-weight: 500;
+	text-align: center;
+	padding-top: 1%;
+}
+
+.list {
+	list-style-type: none;
+	padding-left: 39%;
+}
+
+.icon {
+	display: inline-block;
+	padding-right: 10%;
+}
+
+#icon1 {
+	width: 7em;
+	height: auto;
+}
+
+#icon2 {
+	width: 7em;
+	height: auto;
+}
+
+footer {
+	background-color: #2b2b2b;
+	z-index: 99;
+	margin-bottom: -2em;
+}
+
+.logo {
+	width: 5em;
+	height: auto;
+	padding-left: 47%;
+	padding-top: 2%;
+}
+
+footer p {
+	text-align: center;
+	color: #ffffff;
+	font-family: "Helvetica Neue", sans-serif;
+	padding-bottom: 2%;
+	font-weight: 400;
+	font-size: 1em;
+}
+
+@media only screen and (max-width: 1200px) {
+	.team {
+		height: 56em;
+	}
+
+	.team h2 {
+		padding-left: 10%;
+		padding-top: 2%;
+		text-align: center;
+		float: left;
+	}
+
+	.team-comp {
+		padding-bottom: 3%;
+	}
+
+	.supporting h2 {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.index-collection-folder {
+		font-size: 0.75em;
+	}
+
+	.motto {
+		font-size: 4em;
+		padding-top: 25%;
+	}
+
+	.container {
+		height: 40em;
+	}
+
+	#particles-js {
+		height: 35em;
+	}
+
+	.logo {
+		max-width: 4em;
+		padding-left: 46%;
+	}
+
+	.list {
+		padding-left: 30%;
+	}
+
+	video {
+		width: 360px;
+		height: 240px;
+	}
+
+	footer {
+		z-index: 100;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.cf {
+		display: none;
+	}
+
+	.motto {
+		font-size: 3em;
+		padding-top: 30%;
+	}
+
+	.container {
+		height: 35em;
+	}
+
+	#particles-js {
+		height: 30em;
+	}
+
+	.logo {
+		max-width: 3em;
+		padding-left: 45%;
+	}
+
+	.supporting {
+		height: 25em;
+	}
+
+
+	footer {
+		z-index: 100;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.logo {
+		max-width: 30px;
+		padding-left: 40%;
+	}
+
+	#logo1, #logo2 {
+		display: block;
+	}
+
+	#section2 {
+		margin-bottom: 7%;
+	}
+
+	.list {
+		padding-left: 25%;
+	}
+
+	video {
+		width: 300px;
+		height: 200px;
+		margin-left: 12%;
+	}
+
+	footer {
+		z-index: 99;
+	}
+
+	.team h2 {
+		font-size: 2em;
+	}
+
+	#particles-js {
+		z-index: 2;
+		overflow: hidden;
+		height: 50%;
+	}
+}
