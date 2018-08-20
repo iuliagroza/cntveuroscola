@@ -297,12 +297,18 @@ footer p {
 	}
 
 	#particles-js {
+		display: none;
 		height: 35em;
+		z-index: 1;
 	}
 
 	.logo {
 		max-width: 4em;
 		padding-left: 46%;
+	}
+	
+	.link {
+		z-index: 99999;
 	}
 
 	.list {
