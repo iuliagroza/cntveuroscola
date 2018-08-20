@@ -283,9 +283,9 @@ footer p {
 }*/
 
 @media only screen and (max-width: 1500px) {
-	.index-collection-folder {
+	/*.index-collection-folder {
 		font-size: 0.75em;
-	}
+	}*/
 
 	.motto {
 		font-size: 4em;
@@ -297,7 +297,7 @@ footer p {
 	}*/
 
 	#particles-js {
-		height: 25em;
+		height: 10%;
 		z-index: 1;
 	}
 
