@@ -306,13 +306,13 @@ footer p {
 	}
 
 	.list {
-		padding-left: 30%;
+		padding-left: 28%;
 	}
 
 	video {
 		width: 360px;
 		height: 240px;
-		margin-left: 24%;
+		margin-left: 21%;
 	}
 
 	footer {
@@ -338,7 +338,7 @@ footer p {
 	}
 
 	#particles-js {
-		height: 30em;
+		display: none;
 	}
 
 	.logo {
