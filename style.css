@@ -282,7 +282,7 @@ footer p {
 	}
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1500px) {
 	.index-collection-folder {
 		font-size: 0.75em;
 	}
@@ -318,7 +318,7 @@ footer p {
 	video {
 		width: 360px;
 		height: 240px;
-		margin-left: 5%;
+		margin-left: 10%;
 	}
 
 	footer {
