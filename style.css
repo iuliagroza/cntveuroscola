@@ -303,6 +303,7 @@ footer p {
 
 	#particles-js {
 		height: 25%;
+		display: none;
 		z-index: 1;
 	}
 
