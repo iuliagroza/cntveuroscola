@@ -11,7 +11,6 @@ h2:hover, h3:hover, .motto:hover {
 }
 
 #particles-js {
-	height: 100%;
 	z-index: 3;
 }
 
@@ -301,11 +300,11 @@ footer p {
 		height: 40em;
 	}
 
-	#particles-js {
+	/*#particles-js {
 		height: 25%;
 		display: none;
 		z-index: 1;
-	}
+	}*/
 
 	#link {
 		z-index: 999;
@@ -348,9 +347,9 @@ footer p {
 		height: 35em;
 	}
 
-	#particles-js {
+	/*#particles-js {
 		height: 25%;
-	}
+	}*/
 
 	.logo {
 		max-width: 3em;
@@ -395,10 +394,10 @@ footer p {
 		font-size: 2em;
 	}
 
-	#particles-js {
+	/*#particles-js {
 		z-index: 2;
 		overflow: hidden;
-	}
+	}*/
 }
 
 @media only screen and (max-width: 320px) {
