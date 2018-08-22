@@ -168,7 +168,7 @@ header {
 } 
 
 video {
-	margin-left: 28%;
+	margin-left: 25%;
 	margin-bottom: 5%;
 }
 
@@ -220,11 +220,11 @@ video {
 
 .list {
 	list-style-type: none;
-	padding-left: 39%;
+	margin-left: 36%;
 }
 
 .icon {
-	display: inline-block;
+	display: inline;
 	padding-right: 10%;
 }
 
@@ -281,6 +281,12 @@ footer p {
 	}
 }
 
+@media only screen and (max-width: 1100px) {
+	video {
+		margin-left: 15%;
+	}
+}
+
 @media only screen and (max-width: 800px) {
 	.index-collection-folder {
 		font-size: 0.75em;
@@ -296,7 +302,12 @@ footer p {
 	}
 
 	#particles-js {
-		height: 35em;
+		height: 25%;
+		z-index: 1;
+	}
+
+	#link {
+		z-index: 999;
 	}
 
 	.logo {
@@ -305,7 +316,7 @@ footer p {
 	}
 
 	.list {
-		padding-left: 30%;
+		margin-right: 20%;
 	}
 
 	video {
@@ -337,7 +348,7 @@ footer p {
 	}
 
 	#particles-js {
-		height: 30em;
+		height: 25%;
 	}
 
 	.logo {
@@ -369,10 +380,6 @@ footer p {
 		margin-bottom: 7%;
 	}
 
-	.list {
-		padding-left: 25%;
-	}
-
 	video {
 		width: 300px;
 		height: 200px;
@@ -390,6 +397,16 @@ footer p {
 	#particles-js {
 		z-index: 2;
 		overflow: hidden;
-		height: 50%;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.team-comp {
+		margin-bottom: 1%;
+	}
+
+	.supporting h2 {
+		margin-top: 1%;
+		margin-right: 50%;
 	}
 }
