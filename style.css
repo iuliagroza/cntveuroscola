@@ -124,7 +124,7 @@ header {
 	padding-bottom: 2%;
 }
 
-#link {
+.link {
 	font-size: 1.5em;
 	font-family: "Playfair Display", serif;
 	margin-top: 0;
@@ -133,11 +133,11 @@ header {
 	color: #000000;
 }
 
-#link a {
+.link a {
 	text-decoration: none;
 }
 
-#link a:hover {
+.link a:hover {
 	color: #ffa64d;
 }
 
@@ -306,7 +306,7 @@ footer p {
 		z-index: 1;
 	}*/
 
-	#link {
+	.link {
 		z-index: 999;
 	}
 
