@@ -74,7 +74,6 @@ header {
 
 .motto {
 	font-size: 5em;
-	color: #000000;
 	font-family: "Playfair Display", serif;
 	letter-spacing: 0.1em;
 	font-weight: 600;
@@ -174,6 +173,7 @@ header {
 
 .link a {
 	text-decoration: none;
+	color: #000000 ;
 }
 
 .link a:hover {
