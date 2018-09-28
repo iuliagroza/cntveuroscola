@@ -1,501 +1,340 @@
-html, body {
-	margin: 0;
-	padding: 0;
-	height: 100vh;
-	font-size: 16px;
-	font-family: "Helvetica Neue", sans-serif;
-}
-
-h2:hover, h3:hover, .motto:hover {
-	color: #ffa64d;
-}
-
-#particles-js {
-	z-index: 3;
-}
-
-#prez1 {
-	width: 25%;
-	height: auto;
-	padding-top: -1%;
-	padding-left: 8%;
-	border-radius: 5px;
-}
-
-#prez2 {
-	width: 25%;
-	height: auto;
-	padding-top: -1%;
-	padding-left: 5%;
-	border-radius: 5px;
-}
-
-#prez3 {
-	width: 25%;
-	height: auto;
-	padding-top: -1%;
-	padding-left: 5%;
-	border-radius: 5px;
-}
-
-#hash {
-	font-size: 3em;
-	padding-top: 1%;
-	font-weight: 800;
-}
-
-.container {
-	margin: 0;
-	width: 100%;
-	height: 48em;
-	background-image: url('hospital.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-header {
-	background-color: rgba(0, 0, 0, 0.5);
-	margin-top: -1.4em;
-	position: fixed;
-	z-index: 99;
-}
-
-#logo {
-	width: 20%;
-	height: auto;
-	min-width: 200px;
-	padding: 0.75%;
-	padding-left: 2%;
-	float: left;
-}
-
-.nav-anchor {
-	color: #ffffff;
-	text-decoration: none;
-}
-
-.nav-anchor:hover {
-	color: #ffa64d;
-}
-
-.cf {
-	z-index: 10;
-}
-
-.index-collection-folder {
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-	list-style-type: none;
-	font-weight: 600;
-	font-size: 1em;
-	display: inline-block;
-	float: right;
-	padding-right: 4%;
-	padding-top: 3%;
-	z-index: 11;
-}
-
-.motto {
-	font-size: 5em;
-	font-family: "Playfair Display", serif;
-	letter-spacing: 0.1em;
-	font-weight: 600;
-	text-align: center;
-	padding-top: 20%;
-	z-index: 1000;
-	color: #ffa64d;
-}
-
-#section1 {
-	background-color: #cccccc;
-	margin-top: -3em;
-	width: 100%;
-	height: 45%;
-}
-
-#section1 h2 {
-	font-weight: 600;
-	font-size: 3em;
-	font-family: "Playfair Display", serif;
-	letter-spacing: 0.2em;
-	text-align: center;
-	padding-top: 2%;
-	padding-bottom: 1%;
-}
-
-#section1 p {
-	text-align: center;
-	font-family: "Playfair Display", serif;
-	font-size: 1em;
-	padding-left: 2%;
-	padding-right: 2%;
-	padding-bottom: 5%;
-}
-
-#section2 {
-	background-color: #efefef;
-	margin-top: -2em;
-	font-family: "Playfair Display", serif;
-	font-size: 1em;
-	padding-left: 5%;
-	padding-right: 2%;
-	padding-bottom: 2%;
-}
-
-#section2 h3 {
-	text-align: center;
-	font-size: 1.5em;
-	padding-top: 2%;
-}
-
-#section2 ol {
-	padding-bottom: 2%;
-}
-
-#section3 {
-	background-color: #2b2b2b;
-	margin-top: -2em;
-	color: #ffffff;
-	font-family: "Playfair Display", serif;
-	font-size: 1em;
-	padding-left: 5%;
-	padding-right: 2%;
-	padding-bottom: 2%;
-}
-
-#section3 a {
-	color: #ffffff;
-}
-
-#section3 a:hover {
-	color: #ffa64d;
-}
-
-#section3 h2 {
-	font-weight: 600;
-	font-size: 2em;
-	padding-top: 3%;
-	font-family: "Playfair Display", serif;
-	letter-spacing: 0.17em;
-	text-align: center;
-	padding-bottom: 1%;
-}
-
-#section3 p {
-	text-align: center;
-}
-
-#section4 {
-	background-color: #efefef;
-	margin-top: -2em;
-	font-family: "Playfair Display", serif;
-	font-size: 1em;
-	padding-left: 5%;
-	padding-right: 2%;
-	padding-bottom: 5%;
-}
-
-#section4 h3 {
-	text-align: center;
-	font-size: 1.5em;
-}
-
-#section4 ol {
-	padding-bottom: 2%;
-}
-
-.link {
-	font-size: 1.5em;
-	font-family: "Playfair Display", serif;
-	margin-top: 0;
-	text-align: center;
-	margin-bottom: 2em;
-	color: #000000;
-}
-
-.link a {
-	text-decoration: none;
-	color: #000000 ;
-}
-
-.link a:hover {
-	color: #ffa64d;
-}
-
-.gallery {
-	background-color: #999999;
-	margin: 0;
-	width: 100%;
-}
-
-.gallery h2 {
-	letter-spacing: 0.2em;
-	font-weight: 500;
-	font-size: 3em;
-	font-family: "Playfair Display", serif;
-	text-align: center;
-	padding-top: 2%;
-	padding-bottom: 3%;
-	margin-top: -1em;
-}
-
-.gallery h3 {
-	text-align: center;
-	font-size: 1.5em;
-	font-family: "Playfair Display", serif;
-	margin-top: -2%;
-	margin-bottom: -2%;
-} 
-
-video {
-	margin-left: 27%;
-	margin-bottom: 5%;
-}
-
-.team {
-	height: 42em;
-}
-
-.team h2 {
-	float: right;
-	letter-spacing: 0.2em;
-	font-weight: 600;
-	font-family: "Playfair Display", serif;
-	font-size: 3em;
-	padding-right: 10%;
-	padding-top: 15%;
-}
-
-.team-comp {
-	float: left;
-	font-weight: 600;
-	font-family: "Playfair Display", serif;
-	padding-left: 13%;
-	padding-top: 1%;
-	padding-bottom: 2%;
-}
-
-.team-comp ul {
-	list-style-type: none;
-}
-
-.supporting {
-	margin: 0;
-	width: 100%;
-	height: 16em;
-	background-image: url('bg.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-.supporting h2 {
-	letter-spacing: 0.2em;
-	font-family: "Playfair Display", serif;
-	font-size: 3em;
-	font-weight: 500;
-	text-align: center;
-	padding-top: 1%;
-}
-
-.list {
-	list-style-type: none;
-	margin-left: 36%;
-}
-
-.icon {
-	display: inline;
-	padding-right: 10%;
-}
-
-#icon1 {
-	width: 7em;
-	height: auto;
-}
-
-#icon2 {
-	width: 7em;
-	height: auto;
-}
-
-footer {
-	background-color: #2b2b2b;
-	z-index: 99;
-	margin-bottom: -2em;
-}
-
-.logo {
-	width: 5em;
-	height: auto;
-	padding-left: 47%;
-	padding-top: 2%;
-}
-
-footer p {
-	text-align: center;
-	color: #ffffff;
-	font-family: "Helvetica Neue", sans-serif;
-	padding-bottom: 2%;
-	font-weight: 400;
-	font-size: 1em;
-}
-
-@media only screen and (max-width: 1200px) {
-	.team {
-		height: 56em;
-	}
-
-	.team h2 {
-		padding-left: 10%;
-		padding-top: 2%;
-		text-align: center;
-		float: left;
-	}
-
-	.team-comp {
-		padding-bottom: 3%;
-	}
-
-	.supporting h2 {
-		text-align: center;
-	}
-}
-
-@media only screen and (max-width: 1100px) {
-	video {
-		margin-left: 15%;
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	.index-collection-folder {
-		font-size: 0.75em;
-	}
-
-	.motto {
-		font-size: 4em;
-		padding-top: 25%;
-	}
-
-	.container {
-		height: 40em;
-	}
-
-	/*#particles-js {
-		height: 25%;
-		display: none;
-		z-index: 1;
-	}*/
-
-	.link {
-		z-index: 999;
-	}
-
-	.logo {
-		max-width: 4em;
-		padding-left: 46%;
-	}
-
-	.list {
-		margin-right: 20%;
-	}
-
-	video {
-		width: 360px;
-		height: 240px;
-		margin-left: 12%;
-	}
-
-	footer {
-		z-index: 100;
-		font-size: 0.8em;
-		padding-left: 2%;
-		padding-right: 2%;
-	}
-}
-
-@media only screen and (max-width: 700px) {
-	.cf {
-		display: none;
-	}
-
-	.motto {
-		font-size: 3em;
-		padding-top: 30%;
-	}
-
-	.container {
-		height: 35em;
-	}
-
-	/*#particles-js {
-		height: 25%;
-	}*/
-
-	.logo {
-		max-width: 3em;
-		padding-left: 45%;
-	}
-
-	.supporting {
-		height: 25em;
-	}
-
-	#section2 p {
-		font-size: 0.6em;
-	}
-
-	#section3 p {
-		font-size: 0.6em;
-	}
-
-	footer {
-		z-index: 100;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-	.logo {
-		max-width: 30px;
-		padding-left: 40%;
-	}
-
-	#logo1, #logo2 {
-		display: block;
-	}
-
-	#section2 {
-		margin-bottom: 7%;
-	}
-
-	video {
-		width: 300px;
-		height: 200px;
-		margin-left: 12%;
-	}
-
-	footer {
-		z-index: 99;
-	}
-
-	.team h2 {
-		font-size: 2em;
-	}
-
-	/*#particles-js {
-		z-index: 2;
-		overflow: hidden;
-	}*/
-}
-
-@media only screen and (max-width: 320px) {
-	.team-comp {
-		margin-bottom: 1%;
-	}
-
-	.supporting h2 {
-		margin-top: 1%;
-		margin-right: 50%;
-	}
-}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Mai informat, mai s&#259;n&#259;tos, mai European! </title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+		<script src="particles.min.js"></script>
+
+		</script><script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<script>
+		$(function() {
+		$( ".image-overlay-wrapper:eq(0)" ).append( $('#particles-js') );
+		});
+		</script>
+		<div id="particles-js"></div>
+		<script>
+		particlesJS("particles-js", {
+		 	"particles": {
+		    "number": {
+		      "value": 40,
+		      "density": {
+		        "enable": true,
+		        "value_area": 600
+		      }
+		    },
+		    "color": {
+		      "value": "#ffffff"
+		    },
+		    "shape": {
+		      "type": "circle",
+		      "stroke": {
+		        "width": 0,
+		        "color": "#000000"
+		      },
+		      "polygon": {
+		        "nb_sides": 5
+		      },
+		      "image": {
+		        "src": "img/github.svg",
+		        "width": 100,
+		        "height": 100
+		      }
+		    },
+		    "opacity": {
+		      "value": .6,
+		      "random": false,
+		      "anim": {
+		        "enable": false,
+		        "speed": .3,
+		        "opacity_min": 0.2,
+		        "sync": false
+		      }
+		    },
+		    "size": {
+		      "value": 2,
+		      "random": true,
+		      "anim": {
+		        "enable": false,
+		        "speed": 12,
+		        "size_min": 0.1,
+		        "sync": false
+		      }
+		    },
+		    "line_linked": {
+		      "enable": true,
+		      "distance": 220,
+		      "color": "#ffffff",
+		      "opacity": .2,
+		      "width": 1
+		    },
+		    "move": {
+		      "enable": true,
+		      "speed": 2,
+		      "direction": "none",
+		      "random": false,
+		      "straight": false,
+		      "out_mode": "out",
+		      "bounce": false,
+		      "attract": {
+		        "enable": false,
+		        "rotateX": 500,
+		        "rotateY": 1000
+		      }
+		    }
+		  },
+		  "interactivity": {
+		    "detect_on": "canvas",
+		    "events": {
+		      "onhover": {
+		        "enable": false,
+		        "mode": "grab"
+		      },
+		      "onclick": {
+		        "enable": false,
+		        "mode": "push"
+		      },
+		      "resize": true
+		    },
+		    "modes": {
+		      "grab": {
+		        "distance": 140,
+		        "line_linked": {
+		          "opacity": 1
+		        }
+		      },
+		      "bubble": {
+		        "distance": 400,
+		        "size": 40,
+		        "duration": 2,
+		        "opacity": 8,
+		        "speed": 3
+		      },
+		      "repulse": {
+		        "distance": 200,
+		        "duration": 0.4
+		      },
+		      "push": {
+		        "particles_nb": 4
+		      },
+		      "remove": {
+		        "particles_nb": 2
+		      }
+		    }
+		  },
+		  "retina_detect": true
+		});
+		</script>
+		<style>
+		#particles-js {position: absolute; width: 100%; top: 0; left: 0;}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="title-nav-wrapper">
+					<h1 class="site-title">
+						<a href="" id="top">
+							<img id="logo" src="logo.png"/>
+						</a>
+					</h1>
+					<nav class="main-nav">
+						<div class="nav-wrapper">
+							<ul class="cf">
+								<li class="index-collection-folder"><a href="#supporting" class="nav-anchor">Contact</a></li>
+								<li class="index-collection-folder"><a href="#team" class="nav-anchor">Echip&#259;</a></li>
+								<li class="index-collection-folder"><a href="#gallery" class="nav-anchor">Galerie</a></li>
+								<li class="index-collection-folder"><a href="#about" class="nav-anchor">Despre noi</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<div id="image-overlay-wrapper"></div>
+			<div class="motto">Europa pentru noi!</div>
+			<div class="motto" id="hash">#EUROSCOLARO2018</div>
+		</div>
+		<div class="about" id="about">
+			<div id="section1">
+				<h2>DESPRE NOI</h2>
+				<img id="prez1" src="prez1.JPG"/>
+				<img id="prez2" src="prez2.JPG"/>
+				<img id="prez3" src="prez3.JPG"/>
+				<p>Colegiul Na&#539;ional &#34;Tudor Vladimirescu&#34; T&#226;rgu-Jiu anun&#539;&#259; participarea la cea de-a XI-a edi&#539;ie a Concursului pentru liceeni EUROSCOLA. 
+Edi&#539;ia 2018-2019 a concursului &#34;Euroscola&#34; se desf&#259;&#351;oar&#259; sub titlul generic &#34;Europa pentru noi&#34;. Echipa de proiect va concepe &#351;i implementa o campanie de informare &#351;i con&#351;tientizare a beneficiilor aduse comunit&#259;&#539;ii locale de proiectul European: Reabilitarea, Modernizarea &#351;i Echiparea Ambulatoriului Spitalului Jude&#539;ean de Urgen&#539;&#259; T&#226;rgu-Jiu.</p>
+				<h3 class="link"><a href="https://liagroza.github.io/pcstatistics/" target="blank">SONDAJUL DE OPINIE DESPRE SERVICIILE OFERITE DE AMBULATORIUL JUDE&#538;EAN S-A &#206;NCHEIAT! VEDE&#354;I AICI STATISTICILE.</a></h3>
+				<h3 class="link"><a href="https://www.youtube.com/watch?v=Mbz-wgNGp3k" target="blank">Videoclip de prezentare &#34;Mai informat, mai s&#259;n&#259;tos, mai european!&#34;</a></h3>
+				<h3 class="link"><a href="https://www.igj.ro/social/elevii-colegiului-national-tudor-vladimirescu-pentru-a-5-a-oara-in-proiectul-concurs-euroscola.html" target="blank"><b>IMPACT GORJ:</b> Elevii Colegiului Na&#539;ional &#34;Tudor Vladimirescu&#34; – pentru a 5-a oar&#259; &#238;n proiectul–concurs &#34;Euroscola&#34;</a></h3>
+				<h3 class="link"><a href="https://www.igj.ro/social/elevii-de-la-cntv-vor-invata-cum-sa-intocmeasca-un-proiect-cu-finantare-europeana.html" target="blank"><b>IMPACT GORJ:</b> Elevii de la CNTV vor &#238;nv&#259;&#539;&#259; cum s&#259; &#238;ntocmeasc&#259; un proiect cu finan&#539;are european&#259;</a></h3>
+				<h3 class="link"><a href="https://www.youtube.com/watch?v=4l16hWZHJL8" target="blank"><b>GORJ TV:</b> Consulta&#539;ii medicale gratuite &#238;n T&#226;rgu-Jiu</a></h3>
+				<h3 class="link"><a href="https://www.surveymonkey.com/r/F5DCCHG" target="blank">&#350;tia&#539;i c&#259;... &#34;Mai informat, mai s&#259;n&#259;tos, mai european!&#34;</a></h3>
+			</div>
+			<div id="section3">
+				<h2>V&#259; invit&#259;m s&#259; participa&#539;i la concursul de Treasure Hunt!</h2>
+				<p>Imediat dup&#259; consulta&#539;iile gratuite de la cortul de prim-ajutor din Pia&#539;a Prefecturii, echipa Euroscola CNTV va organiza un concurs de Treasure Hunt, mar&#539;i 21 august 2018, ora 13.30. V&#259; a&#351;tept&#259;m &#238;ntr-un num&#259;r c&#226;t mai mare! Don't forget to have fun! :)</p>
+				<h3 class="link"><a href="art.doc">Rezumat Treasure Hunt</a></h3>
+			</div>
+			<div id="section2">
+			<h3>Obiectivele proiectului:</h3>
+				<ol>
+					<li>implicarea tinerilor liceeni &#238;n promovarea politicilor europene de dezvoltare durabil&#259; din Agenda Europa 2020.</li>
+					<li>o mai bun&#259; diseminare a proiectelor derulate de administra&#539;ia local&#259;.</li>
+					<li>o mai bun&#259; colaborare &#238;ntre autorit&#259;&#539;ile locale &#x219;i tineri.</li>
+					<li>&#238;ncurajarea tinerilor de a se implica &#238;n elaborarea &#x219;i implementarea proiectelor europene.</li>
+					<li>con&#x219;tientizarea beneficiilor pe care proiectul promovat &#238;l aduce locuitorilor jude&#539;ului Gorj.</li>
+					<li>implicarea &#238;n activit&#259;&#539;i de educa&#539;ie pentru s&#259;n&#259;tate &#x219;i preven&#539;ie.</li>
+					<li>crearea de parteneriate cu diverse institu&#539;ii pentru o mai bun&#259; sustenabilitate a proiectului &#238;n vederea realiz&#259;rii de viitoare proiecte.</li>
+					<li>informarea cet&#259;&#539;enilor cu privire la &#x219;ansele egale de acces la servicii medicale de calitate, rezultat al moderniz&#259;rii Ambulatoriului Spitalului Jude&#539;ean Gorj.</li>
+					<li>cre&#x219;terea interesului elevilor &#x219;i profesorilor din institu&#539;ia noastr&#259; privind educa&#539;ia pentru s&#259;n&#259;tate prin realizarea mai multor activit&#259;&#539;i &#x219;colare &#x219;i extra&#x219;colare de acest gen &#x219;i cu o mai mare aplicabilitate. </li>
+					<li>o mai bun&#259; cunoa&#x219;tere a valorilor europene &#x219;i exersarea lor &#238;n contexte nonformale. </li>
+					<li>dezvoltarea competen&#539;elor cheie pentru secolului XXI: competen&#539;ele digitale, lingvistice, creativitatea, lucrul &#238;n echip&#259;, spiritul antreprenorial, comunicarea.</li>
+					<li>consolidarea rolului important pe care &#x219;coala &#238;l are &#238;n comunitate &#x219;i &#238;n formarea de cet&#259;&#539;eni europeni.</li>
+				</ol>
+			</div>
+			<div id="section4">
+			<h3>Stadiile proiectului:</h3>
+				<ol>
+					<li>Anunțarea selecției echipei de proiect. Respectând principiul transparenței și competitivității selecția echipei de proiect s-a realizat prin anunțarea criteriilor de înscriere la avizierelor școlii,Acestea au cuprins rezultatele la învățătură (peste 9.50), competențe lingvistive dovedite în timpului interviului cu tematică europeană</li>
+					<li>Constituirea echipei de proiect</li>
+					<li>Documentare privind alegerea proiectului</li>
+					<li>Discuții cu reprezentanții Consiliului Județean Gorj </li>
+					<li>Activitate de elaborare plan de activitați</li>
+					<li>Stabilirea scopului și obiectivelor proiectului</li>
+					<li>Anunțarea intenției de participare în concurs</li>
+					<li>Stabilirea calendarului activitaților</li>
+					<li>Inființarea website/facebook  proiect</li>
+					<li>Vizită la Ambulatoriul Spitalului județean Gorj</li>
+					<li>Activitate de voluntariat</li>
+					<li>Realizare sondaj de opinie</li>
+					<li>Pregatire și derulare campanie de informare în centrul orașului - 21 august 2018</li>
+					<li>Activitate Treasure Hunt 21 august 2018</li>
+					<li>Activitate de diseminare în presa locală/website-ul școlii și al proiectului</li>
+					<li>Activitate: Să învățăm să scriem un proiect european!</li>
+					<li>Expoziție de fotografii  în holul C.N. T. Vladimirescu</li>
+					<li>Lansarea broșurii/ghidului realizat în timpul proiectelui</li>
+					<li>Diseminare în cadrul Consiliului profesoral, pe webite-ul școlii/presa locală</li>
+					<li>Finalizarea și expedierea materialelor EUROSCOLA</li>
+				</ol>
+			</div>
+		</div>
+		<div class="gallery" id="gallery">
+			<h2>GALERIE</h2>
+			<h3>Video promo&#539;ional</h3>
+			<video width="680" height="480" controls>
+				<source src="euroscola.mp4" type="video/mp4">
+			</video>
+			<h3>Campanie de informare a cetatenilor & Treasure Hunt - 21 august</h3>
+			<div class="w3-content">
+			<img class="mySlides1" src="p1.jpg">
+			<img class="mySlides1" src="p2.jpg">
+			<img class="mySlides1" src="p3.jpg">
+			<img class="mySlides1" src="p4.jpg">
+			<img class="mySlides1" src="p5.jpg">
+			<img class="mySlides1" src="p6.jpg">
+			<img class="mySlides1" src="p7.jpg">
+			<img class="mySlides1" src="p8.jpg">
+			<img class="mySlides1" src="p9.jpg">
+			<img class="mySlides1" src="p10.jpg">
+			<img class="mySlides1" src="p11.jpg">
+			<img class="mySlides1" src="p12.jpg">
+			<img class="mySlides1" src="p13.jpg">
+			<img class="mySlides1" src="p14.jpg">
+			<img class="mySlides1" src="p15.jpg">
+			<img class="mySlides1" src="p16.jpg">
+			<img class="mySlides1" src="p17.jpg">
+			<img class="mySlides1" src="p18.jpg">
+			<img class="mySlides1" src="p19.jpg">
+			<img class="mySlides1" src="p20.jpg">
+			<img class="mySlides1" src="p21.jpg">
+			<img class="mySlides1" src="p22.jpg">
+			<img class="mySlides1" src="p23.jpg">
+			<img class="mySlides1" src="p24.jpg">
+			<img class="mySlides1" src="p25.jpg">
+			<img class="mySlides1" src="p26.jpg">
+			<img class="mySlides1" src="p27.jpg">
+			<img class="mySlides1" src="p28.jpg">
+			<img class="mySlides1" src="p29.jpg">
+			<img class="mySlides1" src="p30.jpg">
+			<img class="mySlides1" src="p31.jpg">
+			<img class="mySlides1" src="p32.jpg">
+			<img class="mySlides1" src="p33.jpg">
+			<img class="mySlides1" src="p34.jpg">
+			<img class="mySlides1" src="p35.jpg">
+			<img class="mySlides1" src="p36.jpg">
+			<div class="w3-button">
+				<button class="w3-display-left1" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="w3-display-right1" onclick="plusDivs(+1)">&#10095;</button>
+			</div>
+			</div>
+
+			<!--<div class="w3-content">
+			<img class="mySlides2" src="img_la.jpg">
+			<img class="mySlides2" src="img_ny.jpg">
+			<img class="mySlides2" src="img_chicago.jpg">
+			<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+			</div>-->
+		</div>
+		<div class="team" id="team">
+			<h2>COMPONEN&#538;A <br> ECHIPEI</h2>
+			<div class="team-comp">
+				<table>
+					<tr>
+						<td><img src="poza1.png"/></td>
+						<td><img src="poza2.png"/></td>
+						<td><img src="poza3.png"/></td>
+						<td><img src="poza4.png"/></td>
+						<td><img src="poza5.png"/></td>
+						<td><img src="poza6.png"/></td>
+					</tr>
+					<tr>
+						<td><img src="poza9.png"/></td>
+						<td><img src="poza10.png"/></td>
+						<td><img src="poza11.png"/></td>
+						<td><img src="poza12.png"/></td>
+						<td><img src="poza7.png"/></td>
+						<td><img src="poza8.png"/></td>
+					</tr>
+					<tr>
+						<td><img src="poza13.jpg"/></td>
+						<td><img src="poza14.jpg"/></td>
+						<td><img src="poza23.png"/></td>
+						<td><img src="poza24.jpg"/></td>
+						<td><img src="poza15.jpg"/></td>
+						<td><img src="poza16.png"/></td>
+					</tr>
+					<tr>
+						<td><img src="poza17.jpg"/></td>
+						<td><img src="poza18.jpg"/></td>
+						<td><img src="poza19.png"/></td>
+						<td><img src="poza20.jpg"/></td>
+						<td><img src="poza21.jpg"/></td>
+						<td><img src="poza22.jpg"/></td>
+					</tr>
+				</table>
+				<h4>Profesori coordonatori:</h4>
+				<ul class="teachers">
+					<li>Vel&#539;an Elena</li>
+					<li>Dragot&#259; Teodora</li>
+				</ul>
+			</div>
+		</div>
+		<div class="supporting" id="supporting">
+			<h2>CONTACT</h2>
+			<ul class="list">
+				<li class="icon"><a href="https://www.facebook.com/CNTV-Euroscola-2018-347767825765852/?fb_dtsg_ag=AdzER6ImLARuWv5ykeOZo7G-6NJYd3jgsCbKaREHPGLQKA%3AAdzoJc5YC8tJIRbzKTk4-74WNl61qUhEEZrWQwpsXNiOqg"><img src="fbicon.png" id="icon1"/></a></li>
+				<li class="icon"><a href="http://cntv-edu.ro/"><img src="logo3.png" id="icon2"/></a></li>
+			</ul>
+		</div>
+		<footer>
+			<img class="logo" src="logo2.png" />
+			<p>&copy; 2018 Colegiul Na&#539;ional "Tudor Vladimirescu" T&#226;rgu-Jiu <br>Proiect sus&#539;inut de Consiliul Jude&#539;ean Gorj <br>Toate drepturile rezervate. </p>
+		</footer>
+	<script src="script.js"></script>
+	<script src="slideshow.js"></script>
+	</body>
+</html>
