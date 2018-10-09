@@ -164,6 +164,10 @@ header {
 	padding-bottom: 2%;
 }
 
+#section3 img {
+	margin-left: 35%;
+}
+
 #section3 a {
 	color: #ffffff;
 }
@@ -416,9 +420,10 @@ footer p {
 		margin-left: 15%;
 	}
 
-	.mySlides1 {
+	.w3-content {
 		margin-left: 15%;
 	}
+
 
 	.team-comp img {
 		width: 100px;
