@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> Mai informat, mai s&#259;n&#259;tos, mai European! </title>
+		<meta charset="UTF-8">
+		<title> CNTV Euroscola 2018 - Mai informat, mai s&#259;n&#259;tos, mai European! </title>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+		<link rel="stylesheet" href="flexslider.css" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 
@@ -11,10 +14,26 @@
 
 		</script><script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider.min.js"></script>
 		<script>
 		$(function() {
 		$( ".image-overlay-wrapper:eq(0)" ).append( $('#particles-js') );
 		});
+		</script>
+		<script>
+			// ===== Scroll to Top ==== 
+			$(window).scroll(function() {
+			    if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
+			        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+			    } else {
+			        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+			    }
+			});
+			$('#return-to-top').click(function() {      // When arrow is clicked
+			    $('body,html').animate({
+			        scrollTop : 0                       // Scroll to top of body
+			    }, 500);
+			});
 		</script>
 		<div id="particles-js"></div>
 		<script>
@@ -146,14 +165,15 @@
 						<div class="nav-wrapper">
 							<ul class="cf">
 								<li class="index-collection-folder"><a href="#supporting" class="nav-anchor">Contact</a></li>
-								<li class="index-collection-folder"><a href="#team" class="nav-anchor">Echip&#259;</a></li>
-								<li class="index-collection-folder"><a href="#gallery" class="nav-anchor">Galerie</a></li>
+								<li class="index-collection-folder"><a href="#gallery" class="nav-anchor">Activit&#259;&#539;i & diseminare</a></li>
+								<li class="index-collection-folder"><a href="#finalres" class="nav-anchor">Rezultate finale</a></li>
 								<li class="index-collection-folder"><a href="#about" class="nav-anchor">Despre noi</a></li>
 							</ul>
 						</div>
 					</nav>
 				</div>
 			</header>
+			<a href="#image-overlay-wrapper" id="return-to-top"><i class="icon-chevron-up">^</i></a>
 			<div id="image-overlay-wrapper"></div>
 			<div class="motto">Europa pentru noi!</div>
 			<div class="motto" id="hash">#EUROSCOLARO2018</div>
@@ -166,20 +186,62 @@
 				<img id="prez3" src="prez3.JPG"/>
 				<p>Colegiul Na&#539;ional &#34;Tudor Vladimirescu&#34; T&#226;rgu-Jiu anun&#539;&#259; participarea la cea de-a XI-a edi&#539;ie a Concursului pentru liceeni EUROSCOLA. 
 Edi&#539;ia 2018-2019 a concursului &#34;Euroscola&#34; se desf&#259;&#351;oar&#259; sub titlul generic &#34;Europa pentru noi&#34;. Echipa de proiect va concepe &#351;i implementa o campanie de informare &#351;i con&#351;tientizare a beneficiilor aduse comunit&#259;&#539;ii locale de proiectul European: Reabilitarea, Modernizarea &#351;i Echiparea Ambulatoriului Spitalului Jude&#539;ean de Urgen&#539;&#259; T&#226;rgu-Jiu.</p>
-				<h3 class="link"><a href="https://liagroza.github.io/pcstatistics/" target="blank">SONDAJUL DE OPINIE DESPRE SERVICIILE OFERITE DE AMBULATORIUL JUDE&#538;EAN S-A &#206;NCHEIAT! VEDE&#354;I AICI STATISTICILE.</a></h3>
-				<h3 class="link"><a href="https://www.youtube.com/watch?v=Mbz-wgNGp3k" target="blank">Videoclip de prezentare &#34;Mai informat, mai s&#259;n&#259;tos, mai european!&#34;</a></h3>
-				<h3 class="link"><a href="https://www.igj.ro/social/elevii-colegiului-national-tudor-vladimirescu-pentru-a-5-a-oara-in-proiectul-concurs-euroscola.html" target="blank"><b>IMPACT GORJ:</b> Elevii Colegiului Na&#539;ional &#34;Tudor Vladimirescu&#34; – pentru a 5-a oar&#259; &#238;n proiectul–concurs &#34;Euroscola&#34;</a></h3>
-				<h3 class="link"><a href="https://www.igj.ro/social/elevii-de-la-cntv-vor-invata-cum-sa-intocmeasca-un-proiect-cu-finantare-europeana.html" target="blank"><b>IMPACT GORJ:</b> Elevii de la CNTV vor &#238;nv&#259;&#539;&#259; cum s&#259; &#238;ntocmeasc&#259; un proiect cu finan&#539;are european&#259;</a></h3>
-				<h3 class="link"><a href="https://www.youtube.com/watch?v=4l16hWZHJL8" target="blank"><b>GORJ TV:</b> Consulta&#539;ii medicale gratuite &#238;n T&#226;rgu-Jiu</a></h3>
-				<h3 class="link"><a href="https://www.surveymonkey.com/r/F5DCCHG" target="blank">&#350;tia&#539;i c&#259;... &#34;Mai informat, mai s&#259;n&#259;tos, mai european!&#34;</a></h3>
+		</div>
+		<div class="team" id="team">
+			<h2>COMPONEN&#538;A <br> ECHIPEI</h2>
+			<div class="team-comp">
+				<table>
+					<tr>
+						<td><div class="tooltip"><img src="poza1.png"/><span class="tooltiptext">Stoian Sorin Alexandru - XI A <br> Am reusit sa ma coordonez mai usor intr-o echipa. Am intalnit persoane interesate de domeniul dezvoltarii regionale. Am reusit sa informez persoane in domenii de interes local. Am invatat despre proiecte europene si cum as putea solicita fonduri. Am invatat sa gestionez un proiect cu fonduri europene. Am reusit sa inteleg mai usor diferentele intre oameni.</span></div></td>
+						<td><div class="tooltip"><img src="poza2.png"/><span class="tooltiptext">Popescu Ioan - X C <br> Proiectul Euroscola m-a ajutat sa acumulez un bagaj mare de cunostinte in diferite domenii. Am invatat cum sa ofer primul ajutor, cum sa fiu un lider mai bun si cum sa scriu un  proiect. Lucrul de care sunt cel mai mandru, insa, e  acela ca am reusit impreuna cu ceilalti sa informam populatia in legatura cu reabilitarea Ambulatoriului Spitalului Judetean de Urgenta Tirgu Jiu.</span></div></td>
+						<td><div class="tooltip"><img src="poza3.png"/><span class="tooltiptext">B&#238;coi Sebastian Darius - XI A <br> Am facut ceva pentru mine si pentru scoala</span></div></td>
+						<td><div class="tooltip"><img src="poza4.png"/><span class="tooltiptext">Popeang&#259; Mihnea &#x218;tefan - XI A <br> A fost o experiență nouă pentru mine și unică până acum întrucât nu am avut până acum ocazia să interacționez atât de mult cu oamenii necunoscuți. În urma acestei experiențe chiar am rămas cu impresia că nu toți oamenii sunt așa nepăsători pe cât am crede. Nu mă așteptam să ajung să mă oprească oamenii să mă intrebe mai mult despre proiect să ajung să vorbesc și câte zece minute cu anumite persoane. Mă bucur foarte mult că sunt parte din acest proiect și vreau să continuăm în aceeași măsură să informăm oamenii.</span></div></td>
+						<td><div class="tooltip"><img src="poza5.png"/><span class="tooltiptext">Davi&#539;oiu Andrei Emil - XI A <br> Mi-am dezvoltat spiritul de echipa si abilitatile de fotograf</span></div></td>
+						<td><div class="tooltip"><img src="poza6.png"/><span class="tooltiptext">M&#259;gureanu-Stoenescu Andreea - X A <br> Participarea la proiectul Euroscola a fost pentru mine o experiența de neuitat care m-a schimbat.Am început sa prețuiesc timpul, sa fiu mai organizata și punctuală. Am descoperit ca o echipa este o familie unita și am reușit sa castig niște prieteni adevărați. In cadrul acestui proiect mi-am exersat și calitatile de voluntar, dar și de lider și sper ca am câștigat aprecierea colegilor și a profesorilor.</span></div></td>
+					</tr>
+					<tr>
+						<td><div class="tooltip"><img src="poza9.png"/><span class="tooltiptext">Vl&#259;du&#539;escu Irina Gabriela - X E <br> A face parte din echipa Euroscola a însemnat cu siguranță cea mai frumoasă experiență a verii. Am avut oportunitatea de a întâlni oameni noi de la care am invatat lucruri interesante. Am avut satisfacția de a mă implica într-un proiect pentru care a trebuit să mă documentez, devenind astfel mai organizată. În timpul activităților mi-am exersat abilitățile de organizator și mi-am antrenat gândirea creativă. Împreună cu colegii mei de echipă, am reușit să înțeleg eforturile pe care le implică salvarea unei vieți, trăind chiar noi emoțiile pe care le aduce cu sine acordarea primului ajutor. Contactul cu autoritățile locale și cu mass-media m-au făcut să iau în considerare și alte posibilități de carieră.</span></div></td>
+						<td><div class="tooltip"><img src="poza10.png"/><span class="tooltiptext">Chiliban Bianca Andreea - X C <br> Proiectul Euroscola reprezinta o experienta inedita,in care am premiat comunicarea, solidaritatea, spiritul civic, o provocare din caream iesit autodidact si in care mi-am depasit anumite limite si temeri. Am invatat ca mai presus de orice este sanatatea noastra, dar si armonia in care convietuim. Bucuria organizari activitatilor proiectului a constiutit o reala satisfactie personala.</span></div></td>
+						<td><div class="tooltip"><img src="poza11.png"/><span class="tooltiptext">Dabelea Ioana Viviana - X A <br> Participând la proiectul Euroscola am avut parte de momente frumoase, făcându-mi prieteni noi și dezvoltându-mi abilitățile de comunicare. Așa am reușit să devin mai responsabilă, lucrând mult mai bine în echipă.</span></div></td>
+						<td><div class="tooltip"><img src="poza12.png"/><span class="tooltiptext">Petric&#259; Cristina Nicoleta - XI A <br> Se spune că sănătatea e mai presus de orice, dar pentru a fi sănătos, trebuie să fii și informat. Consider că proiectul realizat de echipa CNTV deschide noi orizonturi pentru persoanele care au nevoie de îngrijiri medicale. Astfel, oamenii pot merge la ambulatoriu pentru probleme care nu sunt foarte grave, în loc să aglomereze camera de urgență a spitalului. Activitățile noastre au fost diverse, de la un cort amplasat în centrul orașului cu aparatură și personal pentru măsurarea tensiunii arteriale și a glicemiei doritorilor până la o vânătoare de comori adresată tinerilor. Cel mai mult m-a impresionat mulțimea de oameni care s-a adunat la cort și dorința acestora de a afla mai multe despre serviciile medicale oferite de ambulatoriu. Mi-a plăcut să îi văd  plecând satisfăcuți de acolo, pentru că le-au fost răspunse întrebările și clarificate nedumeririle. Chiar cred că am realizat o activitate care a meritat osteneala, deoarece am reușit să le arătăm oamenilor o cale nouă de urmat pentru a face alegerea cea mai bună cu privire la sănătatea lor. De asemenea, echipa de proiect a fost foarte unită. Am cunoscut oameni noi, cu care mi-a făcut plăcere să lucrez și am învățat că o echipă înseamnă mai mult decât niște colegi care îndeplinesc diverse sarcini. Munca unei echipe adevărate se observă la finalul proiectului,iar eu sunt de părere că noi ne-am atins scopul propus inițial.</span></div></td>
+						<td><div class="tooltip"><img src="poza7.png"/><span class="tooltiptext">B&#259;l&#259;cescu Anamaria - XI A <br> Pentru mine acest proiect a reprezentat atat o oportunitate, cât și o provocare. Am avut sansa atat de a imi dezvolta spiritul de echipa, cât și de a imi valorifica cunoștințele de design, am reusit sa contribui activ in societate prin informarea publicului asupra schimbărilor aduse de reabilitarea ambulatoriului județean, cât și sa ajut alte persoane prin îndrumarea lor către acesta. Pe departe, însă, cea mai interesanta etapa mi s-a părut acumularea cunoștințelor necesare pentru redactarea unui proiect cu fonduri europene. Consider ca prin acest proiect am reusit nu numai sa intorc către societate o parte din binele care mi-a fost oferit, cât și sa fructific aceasta experienta in dezvoltarea propriei tolerante, creativități, precum și a redefinirii noțiunii de timp, pe care am început sa îl prețuiesc mai mult. Un proiect reusit care imi va rămâne pentru totdeauna in suflet!</span></div></td>
+						<td><div class="tooltip"><img src="poza8.png"/><span class="tooltiptext">Tudorescu Roxana - XI A <br> “Călătorind” prin lumea Euroscola,mi-am dat seama cât de minunat e sa faci parte dintr-un astfel de proiect și cât de norocoasa am putut fi,având aceasta șansă.Pentru mine,Euroscola reprezintă o experiența inedită,o ocazie unica de lucra in echipa,de a ne afirma,de a ne dezvolta spiritul competitiv și de a descoperi altruismul.Participand la acest proiect,am întâlnit oameni care mi-au umplut sufletul cu bucurie și cu care am legat,sper eu,prietenii de lunga durata.Am invatat ca sănătatea este o responsabilitate ce revine nu numai profesionistilor,ci și fiecăruia dintre noi,ca este o lupta in care noi jucam rolul principal. Trebuie sa spun ca acest proiect a contribuit la formarea mea ca om,ca informarea cetățenilor despre modernizarea anumitor instituții medicale constituie un punct de referință important pentru dezvoltarea orașului,influentand totodata și viața oamenilor.Ma bucur ca am făcut parte din aceasta echipa minunata,deoarece am reușit sa construim o mulțime de amintiri frumoase.Daca cineva m-ar întreba dacă as mai repeta aceasta experiența,de fiecare data răspunsul meu ar fi “Da!”.</span></div></td>
+					</tr>
+					<tr>
+						<td><div class="tooltip"><img src="poza13.jpg"/><span class="tooltiptext">Tuvene Alexia Teodora - X A <br> Euroscola a fost cu mai mult decât o simplă experiență, considerand acest proiect o lecție de viață sau mai bine spus, oportunitatea de a invata sa privesc dintr-o altă perspectivă. <br> Sunt fericita sa spun ca dupa aceste activități mi-am dezvoltat spiritul de lider si am invatat cum o echipă trebuie armonizata pentru a primi rezultatul dorit. Am început să acord atentie detaliilor si sa fiu mai atenta la lumea înconjurătoare. Înainte eram.preocupata doar de problemele mele, poate de cele mai multe ori banale, dar acum pot spune cu mândrie că sunt interesată mai mult de oamenii din jurul meu. Timpul a devenit mai prețios pentru mine si am.invatat cum pot sa il valorific. De aceea acum prefer să fiu mai organizată. <br>Activitățile pe care le-am.desfasurat in timpul.verii au reușit să-mi coloreze vara. Am.vazut cat de usor este sa combini utilul cu plăcutul si cum prin distractie poti invata lucruri noi. Momentele in care am vorbit cu locuitorii orașului nostru mi-au deschis noi orizonturi si m-au facut mai înțeleaptă.Am fost placut surprinsă de reactia oamenilor, multi fiind mulțumiti de campania noastră de informare si am inteles cu adevarat ce inseamna dreptul de a fi informat.</span></div></td>
+						<td><div class="tooltip"><img src="poza14.jpg"/><span class="tooltiptext">Bunget Andreea Maria - X A <br> Experiența EUROSCOLA a fost una de neuitat, prin care m-am maturizat şi am învățat cât de importantă este munca în echipă. Prin acest proiect european am făcut ceva pentru mine şi pentru şcoală, combinând utilul cu plăcutul, ducând la bun sfârșit o idee şi câștigând în același timp aprecierea colegilor şi a profesorilor. Am participat la activități de voluntariat şi mi-am exersat abilitățile de fotograf. De asemenea, am devenit mult mai responsabilă şi mai creativă şi am avut ocazia de a cunoaşte oameni noi, care mi-au devenit prieteni.</span></div></td>
+						<td><div class="tooltip"><img src="poza23.png"/><span class="tooltiptext">Prunescu Bogdan Andrei - X C <br> Activitățile pe care le-am.desfasurat in timpul.verii au reușit să-mi coloreze vara. Am.vazut cat de usor este sa combini utilul cu plăcutul si cum prin distractie poti invata lucruri noi. Momentele in care am vorbit cu locuitorii orașului nostru mi-au deschis noi orizonturi si m-au facut mai înțeleaptă.Am fost placut surprinsă de reactia oamenilor, multi fiind mulțumiti de campania noastră de informare si am inteles cu adevarat ce inseamna dreptul de a fi informat.</span></div></td>
+						<td><div class="tooltip"><img src="poza24.jpg"/><span class="tooltiptext">Groza Iulia Diana - X C <br> Euroscola ne-a adus o multitudine de beneficii atât individual, prin implicarea activă a fiecărui membru al echipei CNTV  în demararea proiectului, cât și la nivelul comunității noastre locale, prin informarea cetățenilor cu privire la modernizarea Ambulatoriului Județean. Personal, am avut ocazia să interacționez cu diverse grupuri sociale întâlnite la evenimentele organizate, să îmi dezvolt capabilitățile de lucru în echipă și de gestionare a problemelor într-un proiect,  să-mi adaug la portofoliu un proiect inedit, dar și să aflu informații noi, să îmi îmbunătățesc cunoștințele tehnice extrem de utile în parcursul meu profesional.  Gradul de implicare al tuturor celor care au avut contact cu acest proiect este îmbucurător și demonstrează încă o dată ca Euroscola unește oameni.</span></div></td>
+						<td><div class="tooltip"><img src="poza15.jpg"/><span class="tooltiptext">Predescu Radu - X C <br> Concursul Euroscola a fost o experienta inedita, care mi-a oferit ocazia de a petrece timp impreuna cu cei mai buni prieteni ai mei, dar si de a cunoaste persoane noi, cu care m-am imprietenit foarte repede. Pe langa acestea, mi-am putut antrena spiritul de lucru in echipa si colegialitate. Concursul Euroscola 2018 a fost o experienta pe care cu siguranta nu o voi uita niciodata!</span></div></td>
+						<td><div class="tooltip"><img src="poza16.png"/><span class="tooltiptext">Dinu&#539;&#259; Eduard &#x218;tefan - X C <br> Participarea la euroscola a fost o experienta deosebita prin intermediul careia am imbinat utilul cu placutul, facand ceva benefic pentru mine,scoala si comunitate</span></div></td>
+					</tr>
+					<tr>
+						<td><div class="tooltip"><img src="poza17.jpg"/><span class="tooltiptext">Dobrot&#259; Maria Angela - X C <br> Consider ca activitatile din cadrul proiectului "EUROSCOLA" vin ca un izvor plin de cunoastere. Tot ceea ce am facut a insemnat o abatere de la comfort, de la rutina atat pentru noi , cat si pentru oamenii care au avut ocazia sa aibe tangente cu noi. Ma bucur enorm de fiecare clipa pe care am petrecut-o langa echipa si langa oamenii care ne-au ajutat, chiar si ascultandu-ne ideile. Pe parcursul proiectului am cunoscut oameni noi, am avut ocazia sa trecem peste zona noastra de lejeritare si sa vorbim cu necunoscuti pentru a-i informa, ne-am informat pe noi insine vazand renovarea Ambulatoriului si documentandu-ne despre aceasta , am organizat un Treasure Hunt, am invatat cum sa scriem un proiect european si cel mai important am castigat o experienta de neuitat. Asa cum spunea si Albert Einstein "Informatia nu este cunoastere. Singura sursa a cunoasterii este experienta."</span></div></td>
+						<td><div class="tooltip"><img src="poza18.jpg"/><span class="tooltiptext">P&#238;rvulescu Roberta-Alina - XI E <br> #EuroscolaRO2018 nu este doar o competiţie, este un prilej de a descoperi şi de a te descoperi. Faptul acesta l-am aflat făcând parte din echipa Colegiului Naţional “Tudor Vladimirescu”. <br> Trebuie să recunosc, la început am fost puţin temătoare. Nu ştiam ce provocări îmi va aduce această experienţă, nu ştiam dacă voi fi capabilă să le fac faţă aşa cum se cuvine, însă am fost plăcut surprinsă de solidaritatea de care am dat dovadă cu toţii, formând  cu adevărat o echipă, o structură unitară, compactă. <br> Prin prisma acestui proiect am învăţat multe. Am descoperit ce înseamnă umanitatea şi profesionalismul  ambulatoriului târgujian. Excelenţa şi precizia, nu doar în diagnosticare, ci şi în relaţia cu pacientul,  sunt la ele acasă. Personalul medical a fost atât de deschis încât ne-a introdus în tainele medicinei şi ne-a acompaniat într-o activitate de proporţii regionale în Piaţa Prefecturii a oraşului.</span></div></td>
+						<td><div class="tooltip"><img src="poza19.png"/><span class="tooltiptext">Aggarwal Ananda Maria - XI E <br> Pot spune că Euroscola a reprezentat o modalitate de dezvoltare personală. Am învăţat multe atât despre medicină, cât şi despre arta comunicării. Am aflat despre nemulţumiri, dorinţe, aşteptări şi păreri bune, am primit sfaturi de viaţă şi am împărtăşit idei şi ţeluri cu echipa şi publicul larg, de asemenea.</span></div></td>
+						<td><div class="tooltip"><img src="poza20.jpg"/><span class="tooltiptext">Popescu Bianca - X C <br> Prin participarea la Euroscola mi am deschis noi orizonturi de cunoaștere. Am avut ocazia sa cunosc oameni noi, sa leg noi prietenii și mai ales, am dobândit abilități de lider.</span></div></td>
+						<td><div class="tooltip"><img src="poza21.jpg"/><span class="tooltiptext">Ionescu Cristina Elena - XI G <br> Prin intermediul proiectului EUROSCOLA am invățat să îmi impun unele opinii și să îmi testez creativitatea. </span></div></td>
+						<td><div class="tooltip"><img src="poza22.jpg"/><span class="tooltiptext">Mihai Mirela Elisabeta - XI E <br> Datorită proiectului, am avut ocazia de a lua contact cu opinia publică. Am fost plăcut surprinsă de buna părere împărtăşită de majoritatea persoanelor care au binevoit să ne acorde câteva moment pentru a le detalia subiectul pe care îl promovăm. Un alt lucru neaşteptat a fost interesul de care publicul a dat dovadă indiferent de vârstă, sex sau mediul din care provin.</span></div></td>
+					</tr>
+				</table>
+				<h4>Profesori coordonatori:</h4>
+				<ul class="teachers">
+					<li>Vel&#539;an Elena</li>
+					<li>Dragot&#259; Teodora</li>
+				</ul>
 			</div>
-			<div id="section3">
-				<h2>V&#259; invit&#259;m s&#259; participa&#539;i la concursul de Treasure Hunt!</h2>
-				<img src="treasure.jpg"/>
-				<p>Imediat dup&#259; consulta&#539;iile gratuite de la cortul de prim-ajutor din Pia&#539;a Prefecturii, echipa Euroscola CNTV va organiza un concurs de Treasure Hunt, mar&#539;i 21 august 2018, ora 13.30. V&#259; a&#351;tept&#259;m &#238;ntr-un num&#259;r c&#226;t mai mare! Don't forget to have fun! :)</p>
-				<h3 class="link"><a href="art.doc">Rezumat Treasure Hunt</a></h3>
-			</div>
+		</div>
+		<div class="partners">
+				<h2>Parteneri:</h2>
+				<ul>
+					<li><img src="isj.png"/></li>
+					<li><img src="spital.png"/></li>
+					<li><img src="redcross.png"/></li>
+				</ul>
+		</div>
 			<div id="section2">
+			<h3 class="link" id="nr1"><a href="prezRO.docx" target="blank">Reabilitarea, Modernizarea &#x219;i Echiparea Ambulatoriului Spitalului Judea&#539;ean de Urgen&#539;&#259; T&#226;rgu-Jiu - Rom&#226;n&#259;</a></h3>
+			<h3 class="link"><a href="prezEN.docx" target="blank">Reabilitarea, Modernizarea &#x219;i Echiparea Ambulatoriului Spitalului Judea&#539;ean de Urgen&#539;&#259; T&#226;rgu-Jiu - Englez&#259;</a></h3>
 			<h3>Obiectivele proiectului:</h3>
 				<ol>
 					<li>implicarea tinerilor liceeni &#238;n promovarea politicilor europene de dezvoltare durabil&#259; din Agenda Europa 2020.</li>
@@ -222,107 +284,139 @@ Edi&#539;ia 2018-2019 a concursului &#34;Euroscola&#34; se desf&#259;&#351;oar&#
 				</ol>
 			</div>
 		</div>
+		<div class="finalres" id="finalres">
+			<h2>REZULTATE FINALE</h2>
+			<video width="680" height="480" controls>
+				<source src="finalvideo.mp4" type="video/mp4">
+			</video>
+			<h3 class="link"><a href="art.doc" target="blank">&#350;tia&#539;i c&#259;... &#34;Mai informat, mai s&#259;n&#259;tos, mai european!&#34;</a></h3>
+			<h3 class="link">Afi&#x219; #EUROSCOLARO2018</h3>
+			<img id="poster"  src="afis.png"/>
+			<h3 class="link" id="down"><a href="https://liagroza.github.io/pcstatistics/" target="blank">SONDAJUL DE OPINIE DESPRE SERVICIILE OFERITE DE AMBULATORIUL JUDE&#538;EAN S-A &#206;NCHEIAT! VEDE&#354;I AICI STATISTICILE.</a></h3>
+		</div>
 		<div class="gallery" id="gallery">
-			<h2>GALERIE</h2>
+			<h2>ACTIVIT&#258;&#538;I & DISEMINARE</h2>
 			<h3>Video promo&#539;ional</h3>
 			<video width="680" height="480" controls>
 				<source src="euroscola.mp4" type="video/mp4">
 			</video>
-			<h3>Campanie de informare a cetatenilor & Treasure Hunt - 21 august</h3>
-			<div class="w3-content">
-			<img class="mySlides1" src="p1.jpg">
-			<img class="mySlides1" src="p2.jpg">
-			<img class="mySlides1" src="p3.jpg">
-			<img class="mySlides1" src="p4.jpg">
-			<img class="mySlides1" src="p5.jpg">
-			<img class="mySlides1" src="p6.jpg">
-			<img class="mySlides1" src="p7.jpg">
-			<img class="mySlides1" src="p8.jpg">
-			<img class="mySlides1" src="p9.jpg">
-			<img class="mySlides1" src="p10.jpg">
-			<img class="mySlides1" src="p11.jpg">
-			<img class="mySlides1" src="p12.jpg">
-			<img class="mySlides1" src="p13.jpg">
-			<img class="mySlides1" src="p14.jpg">
-			<img class="mySlides1" src="p15.jpg">
-			<img class="mySlides1" src="p16.jpg">
-			<img class="mySlides1" src="p17.jpg">
-			<img class="mySlides1" src="p18.jpg">
-			<img class="mySlides1" src="p19.jpg">
-			<img class="mySlides1" src="p20.jpg">
-			<img class="mySlides1" src="p21.jpg">
-			<img class="mySlides1" src="p22.jpg">
-			<img class="mySlides1" src="p23.jpg">
-			<img class="mySlides1" src="p24.jpg">
-			<img class="mySlides1" src="p25.jpg">
-			<img class="mySlides1" src="p26.jpg">
-			<img class="mySlides1" src="p27.jpg">
-			<img class="mySlides1" src="p28.jpg">
-			<img class="mySlides1" src="p29.jpg">
-			<img class="mySlides1" src="p30.jpg">
-			<img class="mySlides1" src="p31.jpg">
-			<img class="mySlides1" src="p32.jpg">
-			<img class="mySlides1" src="p33.jpg">
-			<img class="mySlides1" src="p34.jpg">
-			<img class="mySlides1" src="p35.jpg">
-			<img class="mySlides1" src="p36.jpg">
-			<div class="w3-button">
-				<button class="w3-display-left1" onclick="plusDivs(-1)">&#10094;</button>
-				<button class="w3-display-right1" onclick="plusDivs(+1)">&#10095;</button>
-			</div>
+			<h3 class="link"><a href="https://www.youtube.com/watch?v=Mbz-wgNGp3k" target="blank"> YouTube: Videoclip de prezentare &#34;Mai informat, mai s&#259;n&#259;tos, mai european!&#34;</a></h3>
+
+			<h3>Vizita Ambulatoriului Jude&#539;ean - 23 iulie 2018</h3>
+			<div class="flexslider">
+				<ul class="slides">
+			<li><img src="p37.jpg"></li>
+			<li><img src="p38.jpg"></li>
+			<li><img src="p39.jpg"></li>
+			<li><img src="p40.jpg"></li>
+			<li><img src="p41.jpg"></li>
+			<li><img src="p42.jpg"></li>
+			<li><img src="p43.jpg"></li>
+			<li><img src="p44.jpg"></li>
+			<li><img src="p45.jpg"></li>
+			<li><img src="p46.jpg"></li>
+			<li><img src="p47.jpg"></li>
+			<li><img src="p48.jpg"></li>
+			<li><img src="p50.jpg"></li>
+			<li><img  src="p51.jpg"></li>
+			<li><img  src="p52.jpg"></li>
+			<li><img  src="p53.jpg"></li>
+			</ul>
 			</div>
 
-			<!--<div class="w3-content">
-			<img class="mySlides2" src="img_la.jpg">
-			<img class="mySlides2" src="img_ny.jpg">
-			<img class="mySlides2" src="img_chicago.jpg">
-			<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-			<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-			</div>-->
-		</div>
-		<div class="team" id="team">
-			<h2>COMPONEN&#538;A <br> ECHIPEI</h2>
-			<div class="team-comp">
-				<table>
-					<tr>
-						<td><img src="poza1.png"/></td>
-						<td><img src="poza2.png"/></td>
-						<td><img src="poza3.png"/></td>
-						<td><img src="poza4.png"/></td>
-						<td><img src="poza5.png"/></td>
-						<td><img src="poza6.png"/></td>
-					</tr>
-					<tr>
-						<td><img src="poza9.png"/></td>
-						<td><img src="poza10.png"/></td>
-						<td><img src="poza11.png"/></td>
-						<td><img src="poza12.png"/></td>
-						<td><img src="poza7.png"/></td>
-						<td><img src="poza8.png"/></td>
-					</tr>
-					<tr>
-						<td><img src="poza13.jpg"/></td>
-						<td><img src="poza14.jpg"/></td>
-						<td><img src="poza23.png"/></td>
-						<td><img src="poza24.jpg"/></td>
-						<td><img src="poza15.jpg"/></td>
-						<td><img src="poza16.png"/></td>
-					</tr>
-					<tr>
-						<td><img src="poza17.jpg"/></td>
-						<td><img src="poza18.jpg"/></td>
-						<td><img src="poza19.png"/></td>
-						<td><img src="poza20.jpg"/></td>
-						<td><img src="poza21.jpg"/></td>
-						<td><img src="poza22.jpg"/></td>
-					</tr>
-				</table>
-				<h4>Profesori coordonatori:</h4>
-				<ul class="teachers">
-					<li>Vel&#539;an Elena</li>
-					<li>Dragot&#259; Teodora</li>
-				</ul>
+			<h3 class="link"><a href="https://www.igj.ro/social/elevii-colegiului-national-tudor-vladimirescu-pentru-a-5-a-oara-in-proiectul-concurs-euroscola.html" target="blank"><b>IMPACT GORJ:</b> Elevii Colegiului Na&#539;ional &#34;Tudor Vladimirescu&#34; – pentru a 5-a oar&#259; &#238;n proiectul–concurs &#34;Euroscola&#34;</a></h3>
+
+			<div id="section3">
+				<h2>V&#259; invit&#259;m s&#259; participa&#539;i la concursul de Treasure Hunt!</h2>
+				<img src="treasure.jpg"/>
+				<p>Imediat dup&#259; consulta&#539;iile gratuite de la cortul de prim-ajutor din Pia&#539;a Prefecturii, echipa Euroscola CNTV va organiza un concurs de Treasure Hunt, mar&#539;i 21 august 2018, ora 13.30. V&#259; a&#351;tept&#259;m &#238;ntr-un num&#259;r c&#226;t mai mare! Don't forget to have fun! :)</p>
+				<h3 class="link"><a href="art.doc">Rezumat Treasure Hunt</a></h3>
 			</div>
+
+			<h3 class="space">Campanie de informare a cetatenilor & Treasure Hunt - 21 august</h3>
+			<div class="flexslider">
+				<ul class="slides">
+			<li><img src="p1.jpg"></li>
+			<li><img src="p2.jpg"></li>
+			<li><img src="p3.jpg"></li>
+			<li><img src="p4.jpg"></li>
+			<li><img src="p5.jpg"></li>
+			<li><img src="p6.jpg"></li>
+			<li><img src="p7.jpg"></li>
+			<li><img src="p8.jpg"></li>
+			<li><img src="p9.jpg"></li>
+			<li><img src="p10.jpg"></li>
+			<li><img src="p11.jpg"></li>
+			<li><img src="p12.jpg"></li>
+			<li><img src="p13.jpg"></li>
+			<li><img src="p14.jpg"></li>
+			<li><img  src="p15.jpg"></li>
+			<li><img  src="p16.jpg"></li>
+			<li><img  src="p17.jpg"></li>
+			<li><img  src="p18.jpg"></li>
+			<li><img  src="p19.jpg"></li>
+			<li><img  src="p20.jpg"></li>
+			<li><img  src="p21.jpg"></li>
+			<li><img  src="p22.jpg"></li>
+			<li><img  src="p23.jpg"></li>
+			<li><img  src="p24.jpg"></li>
+			<li><img  src="p25.jpg"></li>
+			<li><img  src="p26.jpg"></li>
+			<li><img  src="p27.jpg"></li>
+			<li><img  src="p28.jpg"></li>
+			<li><img  src="p29.jpg"></li>
+			<li><img  src="p30.jpg"></li>
+			<li><img  src="p31.jpg"></li>
+			<li><img  src="p32.jpg"></li>
+			<li><img  src="p33.jpg"></li>
+			<li><img  src="p34.jpg"></li>
+			<li><img  src="p35.jpg"></li>
+			<li><img  src="p36.jpg"></li>
+			</ul>
+			</div>
+
+			<h3 class="link"><a href="https://www.youtube.com/watch?v=4l16hWZHJL8" target="blank"><b>GORJ TV:</b> Consulta&#539;ii medicale gratuite &#238;n T&#226;rgu-Jiu</a></h3>
+
+
+			<!--<h3 class="space">Panouri activitati & Behind The Scenes :)</h3>
+			<div class="flexslider">
+				<ul class="slides">
+			<li><img src="p71.jpg"></li>
+			<li><img src="p72.jpg"></li>
+			<li><img src="p73.jpg"></li>
+			<li><img src="p74.jpg"></li>
+			<li><img src="p75.jpg"></li>
+			<li><img src="p76.jpg"></li>
+			<li><img src="p77.jpg"></li>
+			<li><img src="p78.jpg"></li>
+			</ul>
+			</div>-->
+
+			<h3 class="space">Cum scriem un proiect finan&#539;at cu fonduri europene? - 18 septembrie 2018</h3>
+			<div class="flexslider">
+				<ul class="slides">
+			<li><img src="p54.jpg"></li>
+			<li><img src="p55.jpg"></li>
+			<li><img src="p56.jpg"></li>
+			<li><img src="p57.jpg"></li>
+			<li><img src="p58.jpg"></li>
+			<li><img src="p59.jpg"></li>
+			<li><img src="p60.jpg"></li>
+			<li><img src="p61.jpg"></li>
+			<li><img src="p62.jpg"></li>
+			<li><img src="p63.jpg"></li>
+			<li><img src="p64.jpg"></li>
+			<li><img src="p65.jpg"></li>
+			<li><img src="p66.jpg"></li>
+			<li><img  src="p67.jpg"></li>
+			<li><img  src="p68.jpg"></li>
+			<li><img  src="p69.jpg"></li>
+			<li><img  src="p70.jpg"></li>
+			</ul>
+			</div>
+
+			<h3 class="link"><a href="https://www.igj.ro/social/elevii-de-la-cntv-vor-invata-cum-sa-intocmeasca-un-proiect-cu-finantare-europeana.html" target="blank"><b>IMPACT GORJ:</b> Elevii de la CNTV vor &#238;nv&#259;&#539;a cum s&#259; &#238;ntocmeasc&#259; un proiect cu finan&#539;are european&#259;</a></h3>
+
 		</div>
 		<div class="supporting" id="supporting">
 			<h2>CONTACT</h2>
@@ -333,9 +427,16 @@ Edi&#539;ia 2018-2019 a concursului &#34;Euroscola&#34; se desf&#259;&#351;oar&#
 		</div>
 		<footer>
 			<img class="logo" src="logo2.png" />
-			<p>&copy; 2018 Colegiul Na&#539;ional "Tudor Vladimirescu" T&#226;rgu-Jiu <br>Proiect sus&#539;inut de Consiliul Jude&#539;ean Gorj <br>Toate drepturile rezervate. </p>
+			<p>&copy; 2018 Colegiul Na&#539;ional "Tudor Vladimirescu" T&#226;rgu-Jiu | Iulia Groza - X C <br>Proiect sus&#539;inut de Consiliul Jude&#539;ean Gorj <br>Toate drepturile rezervate. </p>
 		</footer>
 	<script src="script.js"></script>
 	<script src="slideshow.js"></script>
+	<script>
+		$(function() {
+		  $('.flexslider').flexslider({
+		    animation: "slide"
+		  });
+		});
+	</script>
 	</body>
 </html>
