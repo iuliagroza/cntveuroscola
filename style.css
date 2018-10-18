@@ -38,6 +38,10 @@ h2:hover, h3:hover, .motto:hover {
 	border-radius: 5px;
 }
 
+#group {
+	padding-bottom: 5%;
+}
+
 #hash {
 	font-size: 3em;
 	padding-top: 1%;
