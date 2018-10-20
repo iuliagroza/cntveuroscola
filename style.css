@@ -516,6 +516,15 @@ footer p {
 	font-size: 1em;
 }
 
+.anunt {
+	padding-top: 3%;
+	padding-bottom: 2%;
+}
+
+#special {
+	height: 32em;
+}
+
 .tooltip {
 		    position: relative;
 		    display: inline-block; 
